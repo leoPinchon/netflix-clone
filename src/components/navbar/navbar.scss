@@ -1,0 +1,72 @@
+.scrolled{
+    background: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.5) 70%);
+}
+
+.navbar{
+    color: white;
+    font-size: 14px;
+    line-height: 16.8px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.5) 70%);
+    transition: background .5s ease-in;
+
+   
+    &.scrolled {
+       
+        background: var(--main-color);
+    }
+    
+
+    .container {
+        padding: 0 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+
+        
+
+        .left{
+          display: flex;
+          align-items: center;  
+          gap: 20px;
+
+          img{
+              height: 25px;
+              margin-right: 25px;
+          }
+        }
+
+        .right{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+
+            img{
+                height: 30px;
+                width: 30px;
+                border-radius: 5px;
+                object-fit: cover;
+                cursor: pointer;
+         
+            }
+
+            .icon {
+                cursor: pointer;
+
+            
+            }
+        }
+    }
+}
+
+.profile{
+    position: relative;
+}
+
+span{
+    cursor: pointer;
+}

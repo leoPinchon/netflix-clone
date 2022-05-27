@@ -1,0 +1,132 @@
+.homeMovie {
+  height: 100vh;
+  position: relative;
+}
+
+.homeMovie > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.homeMovie__container {
+  position: absolute;
+  width: 35%;
+  left: 50px;
+  bottom: 20%;
+}
+
+.title-container__series {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.title-container__series img {
+  width: 3.5rem;
+  height: auto;
+}
+
+.title-container__series h3 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.title-container__title {
+  font-size: 10rem;
+}
+
+.container-info__title {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 2.7rem;
+    margin-right: 1.3rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+}
+
+.homeMovie__container-info {
+  p {
+    font-size: 1rem;
+  }
+}
+// Conatianer Bouttons
+
+.homeMovie__buttons-container {
+  margin-top: 1.7rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.homeMovie__button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 16px 27px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background: white;
+  color: var(--main-color);
+
+  &:nth-child(2) {
+    background: rgba(83, 83, 83, 0.8);
+    color: white;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.homeMovie__icon {
+  transform: scale(1.7);
+}
+
+//Boutopn replay en bas à droite
+
+.homeMovie__replay {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+
+  right: 0;
+  bottom: 10%;
+}
+
+.replay_container {
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.replay_icon {
+  color: white;
+  transform: scale(1.2) translateY(1px);
+}
+
+.replay__age {
+  position: relative;
+  background: rgba(3, 3, 3, 0.5);
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1.2rem;
+  font-size: 1.3rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0.2rem;
+    background: #fff;
+    left: 0;
+  }
+}
